@@ -1,7 +1,7 @@
 # rotten-bananas
 CSCI 2270 final project
 
-In the country of Null, there are n cities, connected by m bidirectional roads. It is always possible to go from any one city to any other using these roads. 
+In the country of Segfault, there are n cities, connected by m bidirectional roads. It is always possible to go from any one city to any other using these roads. 
 Each road is owned by some person. None of the people owning roads like delivery trucks, so they do not allow delivery trucks onto the roads. 
 A delivery company wants to open in the country. Since the road owners do not let the company use the roads, the company decides to buy some of the roads from the owners.
 Each owner is willing to sell their road for some price. The company wants to spend the least amount of money possible on the roads such that their delivery trucks can travel from any city to any other city using the roads the company bought.
@@ -48,14 +48,16 @@ The complexity of each query (other than 5) is O(log n) due to the usage of a se
 Adding these together, the complexity of the entire program is O((n+m+q) log n). 
 
 
-Restrictions: 2 <= n <= 100000, 1 <= m <= 100000. The program will exit early if these restrictions are not met. 
+Restriction: 2 <= n <= 1000000. 
+
+If any user input is invalid, the program will terminate early. 
 
 class segtree - public methods:
  - segtree
- - int querySum(a,b)
- - int queryMax(a,b)
- - int queryMin(a,b)
- - int at(c)
- - void add(a,b,k)
- - void subtract(a,b,k)
+ - long long querySum(a,b)
+ - long long queryMax(a,b)
+ - long long queryMin(a,b)
+ - long long at(c)
+ - void update(a,b,k)
+ - int size()
  - ~segtree
