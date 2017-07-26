@@ -1,6 +1,10 @@
 # rotten-bananas
 CSCI 2270 final project
 
+To run this program:
+ - Download all the files, and use the following to compile: `g++ -std=c++11 -o baaad graph.cpp segtree.cpp bad.cpp`. Then run the file that is produced
+
+
 In the country of Segfault, there are n cities, connected by m bidirectional roads. It is always possible to go from any one city to any other using these roads. 
 Each road is owned by some person. None of the people owning roads like delivery trucks, so they do not allow delivery trucks onto the roads. 
 A delivery company wants to open in the country. Since the road owners do not let the company use the roads, the company decides to buy some of the roads from the owners.
